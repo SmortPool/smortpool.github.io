@@ -8,7 +8,7 @@
         "build:pug": "node scripts/build-pug.js",
         "build:scripts": "node scripts/build-scripts.js",
         "build:scss": "node scripts/build-scss.js",
-        "build:copy":"node scripts/copy-docs.js",
+        "build:copy": "node scripts/copy-docs.js",
         "clean": "node scripts/clean.js",
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"

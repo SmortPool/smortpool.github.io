@@ -4,7 +4,6 @@ const _ = require("lodash");
 const chokidar = require("chokidar");
 const path = require("path");
 const renderAssets = require("./render-assets");
-const renderPug = require("./render-pug");
 const renderScripts = require("./render-scripts");
 const renderSCSS = require("./render-scss");
 const renderHTML = require("./render-html");
@@ -45,7 +44,8 @@ function _processFile(filePath, watchEvent) {
     console.log(`### INFO: File event: ${watchEvent}: ${filePath}`);
 
     if (filePath.match(/\.pug$/)) {
-        return _handlePug(filePath, watchEvent);
+        return;
+        // return _handlePug(filePath, watchEvent);
     }
 
     if (filePath.match(/\.html$/)) {
@@ -71,32 +71,32 @@ function _processFile(filePath, watchEvent) {
     }
 }
 
-function _handlePug(filePath, watchEvent) {
-    if (watchEvent === "change") {
-        if (
-            filePath.match(/includes/) ||
-            filePath.match(/mixins/) ||
-            filePath.match(/\/pug\/layouts\//)
-        ) {
-            return _renderAllPug();
-        }
-        return renderPug(filePath);
-    }
-    if (
-        !filePath.match(/includes/) &&
-        !filePath.match(/mixins/) &&
-        !filePath.match(/\/pug\/layouts\//)
-    ) {
-        return renderPug(filePath);
-    }
-}
+// function _handlePug(filePath, watchEvent) {
+//     if (watchEvent === "change") {
+//         if (
+//             filePath.match(/includes/) ||
+//             filePath.match(/mixins/) ||
+//             filePath.match(/\/pug\/layouts\//)
+//         ) {
+//             return _renderAllPug();
+//         }
+//         return renderPug(filePath);
+//     }
+//     if (
+//         !filePath.match(/includes/) &&
+//         !filePath.match(/mixins/) &&
+//         !filePath.match(/\/pug\/layouts\//)
+//     ) {
+//         return renderPug(filePath);
+//     }
+// }
 
-function _renderAllPug() {
-    console.log("### INFO: Rendering All");
-    _.each(allPugFiles, (value, filePath) => {
-        renderPug(filePath);
-    });
-}
+// function _renderAllPug() {
+//     console.log("### INFO: Rendering All");
+//     _.each(allPugFiles, (value, filePath) => {
+//         renderPug(filePath);
+//     });
+// }
 
 function _handleSCSS() {
     renderSCSS();

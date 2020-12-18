@@ -7,7 +7,7 @@
         "build:assets": "node scripts/build-assets.js",
         "build:scripts": "node scripts/build-scripts.js",
         "build:scss": "node scripts/build-scss.js",
-        "build:html":"node scripts/build-html.js",
+        "build:html": "node scripts/build-html.js",
         "clean": "node scripts/clean.js",
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"

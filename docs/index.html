@@ -67,8 +67,8 @@
                         <li class="nav-item">
                             <a
                                 class="nav-link js-scroll-trigger"
-                                href="#portfolio"
-                                >Portfolio</a
+                                href="#calculator"
+                                >Calculator</a
                             >
                         </li>
                         <li class="nav-item">
@@ -158,197 +158,106 @@
                 </div>
             </div>
         </section>
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
+        <!-- Calculator-->
+        <section class="page-section" id="calculator">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
+                    <h2 class="section-heading text-uppercase">Calculator</h2>
                     <h3 class="section-subheading text-muted">
-                        Lorem ipsum dolor sit amet consectetur.
+                    Calculate how much you can save
                     </h3>
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="visitors">Visitors:</label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control" placeholder="Number of visitors">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="visitors">Ventilation:</label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control" placeholder="Ventilation">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="visitors">Heating:</label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control" placeholder="Heating">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="visitors">Monthly cost of electricity:</label>
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control" placeholder="Monthly cost of electricity:">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                    <form class="form-pool">
+                    <div class="form-block">
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="input-group mb-3">
+                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <option selected disabled>Pool Type</option>
+                                        <option value="1">Hot tub</option>
+                                        <option value="2">Sport's pool</option>
+                                        <option value="3">Japanese pool</option>
+                                        <option value="3">Circulated pool</option>
+                                        <option value="3">Fountain pool</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">
+                                    <input type="number" class="form-control" placeholder="Surface Area">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">m²</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">
+                                    <input type="number" class="form-control" placeholder="Pool temperature">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">°C</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">
+                                    <input type="number" class="form-control" placeholder="Air temperature">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">°C</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">
+                                    <input type="number" class="form-control" placeholder="Relative humidity">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                </div>               
+                <a href="#calculator">
+                <div class="addpoolbutton">
+                    <img
+                        align="left"
+                        width="25px"
+                        height="25px"
+                        class="addpoolbutton"
+                        src="assets/img/addpoolbutton.png"
+                        alt=""
+                    /><p class="text-muted">Add another pool</p>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a
-                                class="portfolio-link"
-                                data-toggle="modal"
-                                href="#portfolioModal1"
-                            >
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img
-                                    class="img-fluid"
-                                    src="assets/img/portfolio/01-thumbnail.jpg"
-                                    alt=""
-                                />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">
-                                    Threads
-                                </div>
-                                <div
-                                    class="portfolio-caption-subheading text-muted"
-                                >
-                                    Illustration
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a
-                                class="portfolio-link"
-                                data-toggle="modal"
-                                href="#portfolioModal2"
-                            >
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img
-                                    class="img-fluid"
-                                    src="assets/img/portfolio/02-thumbnail.jpg"
-                                    alt=""
-                                />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">
-                                    Explore
-                                </div>
-                                <div
-                                    class="portfolio-caption-subheading text-muted"
-                                >
-                                    Graphic Design
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a
-                                class="portfolio-link"
-                                data-toggle="modal"
-                                href="#portfolioModal3"
-                            >
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img
-                                    class="img-fluid"
-                                    src="assets/img/portfolio/03-thumbnail.jpg"
-                                    alt=""
-                                />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">
-                                    Finish
-                                </div>
-                                <div
-                                    class="portfolio-caption-subheading text-muted"
-                                >
-                                    Identity
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <div class="portfolio-item">
-                            <a
-                                class="portfolio-link"
-                                data-toggle="modal"
-                                href="#portfolioModal4"
-                            >
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img
-                                    class="img-fluid"
-                                    src="assets/img/portfolio/04-thumbnail.jpg"
-                                    alt=""
-                                />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">
-                                    Lines
-                                </div>
-                                <div
-                                    class="portfolio-caption-subheading text-muted"
-                                >
-                                    Branding
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a
-                                class="portfolio-link"
-                                data-toggle="modal"
-                                href="#portfolioModal5"
-                            >
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img
-                                    class="img-fluid"
-                                    src="assets/img/portfolio/05-thumbnail.jpg"
-                                    alt=""
-                                />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">
-                                    Southwest
-                                </div>
-                                <div
-                                    class="portfolio-caption-subheading text-muted"
-                                >
-                                    Website Design
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="portfolio-item">
-                            <a
-                                class="portfolio-link"
-                                data-toggle="modal"
-                                href="#portfolioModal6"
-                            >
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img
-                                    class="img-fluid"
-                                    src="assets/img/portfolio/06-thumbnail.jpg"
-                                    alt=""
-                                />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">
-                                    Window
-                                </div>
-                                <div
-                                    class="portfolio-caption-subheading text-muted"
-                                >
-                                    Photography
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
         </section>
         <!-- About-->

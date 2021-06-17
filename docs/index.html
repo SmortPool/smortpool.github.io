@@ -166,102 +166,578 @@
                     <h3 class="section-subheading text-muted">
                     Calculate how much you can save
                     </h3>
-                    <form>
+
+                    <button class="accordion">General information</button>
+                    
+                    <div class="panel">
+                        <br>
+                        <form>
+                        <!-- General location block-->
                         <div class="form-row">
                             <div class="col">
-                                <label for="visitors">Visitors:</label>
+                                <label for="visitors"><b>Altitude of object</b></label>
                                 <div class="input-group mb-3">
-                                    <input type="number" class="form-control" placeholder="Number of visitors">
+                                    <input type="number" class="form-control" placeholder="Altitude">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">m</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col">
-                                <label for="visitors">Ventilation:</label>
-                                <div class="input-group mb-3">
-                                    <input type="number" class="form-control" placeholder="Ventilation">
+                                <label for="nomarea"><b>Nominal area of object</b></label>
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" placeholder="Nominal area">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">m²</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- General outside parameters block-->
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="text-center">
+                                    <p><b>Summer</b></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="text-center">
+                                    <p><b>Winter</b></p>
                                 </div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col">
-                                <label for="visitors">Heating:</label>
-                                <div class="input-group mb-3">
-                                    <input type="number" class="form-control" placeholder="Heating">
+                                <div class="text-center">
+                                    <p><b>Temperature</b></p>
                                 </div>
                             </div>
                             <div class="col">
-                                <label for="visitors">Monthly cost of electricity:</label>
-                                <div class="input-group mb-3">
-                                    <input type="number" class="form-control" placeholder="Monthly cost of electricity:">
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" placeholder="Summer temperature">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">°C</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" placeholder="Winter Temperature">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">°C</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </form>
-                    <form class="form-pool">
-                        <div class="form-block" id="sections">
-                            <div class="form-row section">
-                                <div class="col">
-                                    <div class="input-group mb-3">
-                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                            <option selected disabled>Pool Type</option>
-                                            <option value="1">Hot tub</option>
-                                            <option value="2">Sport's pool</option>
-                                            <option value="3">Japanese pool</option>
-                                            <option value="3">Circulated pool</option>
-                                            <option value="3">Fountain pool</option>
-                                        </select>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <p><b>Humidity</b></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" placeholder="Summer humidity">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">%</span>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="input-group mb-3">
-                                        <input type="number" class="form-control" placeholder="Surface Area">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">m²</span>
-                                        </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" placeholder="Winter humidity">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">%</span>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <div class="input-group mb-3">
-                                        <input type="number" class="form-control" placeholder="Pool temperature">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">°C</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="input-group mb-3">
-                                        <input type="number" class="form-control" placeholder="Air temperature">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">°C</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="input-group mb-3">
-                                        <input type="number" class="form-control" placeholder="Relative humidity">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">%</span>
-                                        </div>
-                                    </div>
-                                <p><a href="#" class='remove' style="color:red">Remove</a></p>
                                 </div>
                             </div>
                         </div>
-                    </form>                    
-                </div>               
-                <a href="#calculator" class='addsection'>
-                <div>
-                    <img
-                        align="left"
-                        width="25px"
-                        height="25px"
-                        src="assets/img/addpoolbutton.png"
-                        alt=""
-                    /><p class="text-muted">Add another pool</p>
-                </div>
-                </a>
-                <div class="text-center">
-                <input type="button" value="Calculate">
-                </div>
+                        <!-- General energy price block-->
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <p><b>Price of electricity</b></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" id="priceofElectricity" placeholder="Price of energy">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">€/MWh</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- General monthly energy consumption block-->
+                        <div class="form-row">
+                            <div class="col">
+                                <button type="button" data-toggle="collapse" data-target="#singleMonth" class="btn btn-secondary btn-lg btn-block" aria-expanded="false" aria-controls="collapseExample">Single month</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" data-toggle="collapse" data-target="#fullYear" class="btn btn-secondary btn-lg btn-block" aria-expanded="false" aria-controls="collapseExample">Full year</button>
+                            </div>
+                        </div>
+                        <br>
+                        </p>
+                        <div id="singleMonth">
+                            <div>
+                                <div class="form-row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <p><b>Electricity consumption</b></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="number"  id="singleMonthConsumption" class="form-control" placeholder="Electricity consumption">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">MWh</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                        <div id="fullYear">
+                            <div>
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">Month</th>
+                                        <th scope="col">Price of electricity</th>
+                                        <th scope="col">Price of ___</th>
+                                        <th scope="col">Price of ___</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <th scope="row">January</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">February</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">March</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">April</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">May</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">June</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">July</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">August</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">September</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">October</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">November</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">December</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                    <button class="accordion">Pool heating</button>
+                    <div class="panel">
+                        <br>
+                        <form class="form-pool">
+                            <div class="form-block">
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="input-group mb-3">
+                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                <option selected disabled>Pool Type</option>
+                                                <option value="1">Hot tub</option>
+                                                <option value="2">Sport's pool</option>
+                                                <option value="3">Japanese pool</option>
+                                                <option value="3">Circulated pool</option>
+                                                <option value="3">Fountain pool</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="input-group mb-3">
+                                            <input type="number" class="form-control" placeholder="Surface Area">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">m²</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="input-group mb-3">
+                                            <input type="number" class="form-control" placeholder="Pool temperature">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">°C</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="input-group mb-3">
+                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                <option selected disabled>Vent service area</option>
+                                                <option value="1">S1</option>
+                                                <option value="2">S2</option>
+                                                <option value="3">S3</option>
+                                                <option value="3">S4</option>
+                                                <option value="3">S5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div> 
+                        </form>
+                    </div>
+                    <button class="accordion">Ventilation heating</button>
+                    <div class="panel">
+                        <br>
+                        <form class="form-pool">
+                            <div class="form-block">
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="input-group mb-3">
+                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                <option selected disabled>Vent service area</option>
+                                                <option value="1">S1</option>
+                                                <option value="2">S2</option>
+                                                <option value="3">S3</option>
+                                                <option value="3">S4</option>
+                                                <option value="3">S5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="input-group mb-3">
+                                            <input type="number" class="form-control" placeholder="Air temperature">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">°C</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="input-group mb-3">
+                                            <input type="number" class="form-control" placeholder="Relative humidity">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div> 
+                        </form>
+                    </div>
+
+                    <button class="accordion">Domestic hot water</button>
+                    <div class="panel">
+                        <p>Lorem ipsum...</p>
+                    </div>
+
+                    <button class="accordion">(Other)</button>
+                    <div class="panel">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                    <button class="accordion">Results</button>
+                    <div class="panel">
+                        <br>
+                        <p id="results">Siia tuleb vastus</p>
+                    </div>
+                </div> 
             </div>
         </section>
         <!-- About-->
@@ -977,5 +1453,9 @@
         <!-- Add pooltable-->
         <script src="js/addpool.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Add accordion-->
+        <script src="js/accordion.js"></script>
+        <!-- Add function-->
+        <script src="js/add.js"></script>
     </body>
 </html>

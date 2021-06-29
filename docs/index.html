@@ -177,7 +177,7 @@
                             <div class="col">
                                 <label for="visitors"><b>Altitude of object</b></label>
                                 <div class="input-group mb-3">
-                                    <input type="number" class="form-control" placeholder="Altitude">
+                                    <input type="number" class="form-control" id="objectsAltitude" placeholder="Altitude">
                                     <div class="input-group-append">
                                         <span class="input-group-text">m</span>
                                     </div>
@@ -654,7 +654,7 @@
                                     </div>
                                     <div class="col">
                                         <div class="input-group mb-3">
-                                            <input type="number" class="form-control" placeholder="Surface Area">
+                                            <input type="number" class="form-control" id="poolArea" placeholder="Surface Area">
                                             <div class="input-group-append">
                                                 <span class="input-group-text">m²</span>
                                             </div>
@@ -662,7 +662,7 @@
                                     </div>
                                     <div class="col">
                                         <div class="input-group mb-3">
-                                            <input type="number" class="form-control" placeholder="Pool temperature">
+                                            <input type="number" class="form-control"  id="poolTemperature" placeholder="Pool temperature">
                                             <div class="input-group-append">
                                                 <span class="input-group-text">°C</span>
                                             </div>
@@ -704,7 +704,7 @@
                                     </div>
                                     <div class="col">
                                         <div class="input-group mb-3">
-                                            <input type="number" class="form-control" placeholder="Air temperature">
+                                            <input type="number" class="form-control"  id="airTemperature" placeholder="Air temperature">
                                             <div class="input-group-append">
                                                 <span class="input-group-text">°C</span>
                                             </div>
@@ -712,7 +712,7 @@
                                     </div>
                                     <div class="col">
                                         <div class="input-group mb-3">
-                                            <input type="number" class="form-control" placeholder="Relative humidity">
+                                            <input type="number" class="form-control" id="airRelativeHumidity" placeholder="Relative humidity">
                                             <div class="input-group-append">
                                                 <span class="input-group-text">%</span>
                                             </div>
@@ -735,7 +735,26 @@
                     <button class="accordion">Results</button>
                     <div class="panel">
                         <br>
-                        <p id="results">Siia tuleb vastus</p>
+                        <h3>Electricity total price</h3>
+                        <p id="priceResult">Heres result</p>
+                        <h3>Air temperature as kelvin</h3>
+                        <p id="airResultAsKelvin">Heres result</p>
+                        <h3>Pool temperature as Kelvin</h3>
+                        <p id="poolResultAsKelvin">Heres result</p>
+                        <h3>Ruumiõhu niiskussisaldus [g/kg] - indoor Air Humidity</h3>
+                        <p id="indoorAirHumidity">Heres result</p>
+                        <h3>Veeauru osarõhk veeauruga küllastunud niiskes õhus [Pa] - water Vapor Partial Pressure In Saturated Humid Air</h3>
+                        <p id="waterVaporPartialPressureInSaturatedHumidAir">Heres result</p>
+                        <h3>Veeauru osarõhk antud temperatuuril [Pa] - water Vapor Partial Pressure At Given Temperature</h3>
+                        <p id="waterVaporPartialPressureAtGivenTemperature">Heres result</p>
+                        <h3>Veeauru osarõhk basseinpinna kohal [Pa] - water Vapor Partial Pressure Above Pool</h3>
+                        <p id="waterVaporPartialPressureAbovePool">Heres result</p>
+                        <h3>Aurustuva vee kogus VDI järgi kasutusajal [kg/h] - amount Of Evaporating Water VDI</h3>
+                        <p id="amountOfEvaporatingWaterVDI">Heres result</p>
+                        <h3>Õhuvooluhulk [m3/h] - air Flow Rate</h3>
+                        <p id="airFlowRate">Heres result</p>
+                        <h3>Õhutihedus [kg/l] - air Density</h3>
+                        <p id="airDensity">Heres result</p>
                     </div>
                 </div> 
             </div>
@@ -1457,6 +1476,6 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/accordion.js"></script>
         <!-- Add function-->
-        <script src="js/add.js"></script>
+        <script src="js/calculator.js"></script>
     </body>
 </html>

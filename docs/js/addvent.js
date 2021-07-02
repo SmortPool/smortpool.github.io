@@ -1,36 +1,36 @@
 //define template
-var template = $('#poolsections .poolsection:first').clone();
+var ventTemplate = $('#ventsections .ventsection:first').clone();
 
 //define counter
-var sectionsCount = 1;
+var ventSectionsCount = 1;
 
 //add new section
-$('body').on('click', '.addsection', function() {
+$('body').on('click', '.ventsection', function() {
 
     //increment
-    sectionsCount++;
+    ventSectionsCount++;
     
     //loop through each input
-    var poolsection = template.clone().find(':input').each(function(){
+    var ventsection = ventTemplate.clone().find(':input').each(function(){
 
         //set id to store the updated section number
-        var newId = this.id + sectionsCount;
+        var newVentId = this.id + ventSectionsCount;
 
         //update for label
-        $(this).prev().attr('for', newId);
+        $(this).prev().attr('for', newVentId);
 
         //update id
-        this.id = newId;
+        this.id = newVentId;
 
     }).end()
    
     //inject new section
-    .appendTo('#poolsections');
+    .appendTo('#ventsections');
     return false;
 });
 
 //remove section
-$('#poolsections').on('click', '.poolremove', function() {
+$('#ventsections').on('click', '.ventremove', function() {
     //fade out section
     $(this).parent().fadeOut(300, function(){
         //remove parent element (main section)

@@ -10494,6 +10494,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   border: none;
   outline: none;
   transition: 0.4s;
+  
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -10506,7 +10507,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   padding: 0 18px;
   background-color: white;
   max-height: 0;
-  overflow: hidden;
+  overflow: auto;
   transition: max-height 0.2s ease-out;
 }
 

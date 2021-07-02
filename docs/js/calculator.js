@@ -53,7 +53,7 @@ $("#singleMonthConsumption, #priceofElectricity, #poolTemperature, #airTemperatu
       $('#airDensity').text(airDensity);
     }
 
-    // Ruumiohu niiskussisaldus[g/kg] - indoor Air Humidity
+    // Ruumiohu niiskussisaldus [g/kg] - indoor Air Humidity
     if($('#airRelativeHumidity').val() != "" && $('#airTemperature').val() != "") {
       var indoorAirHumidity =  (6.112 * Math.exp((17.67 * airTemperature)/(airTemperature + 243.5)) * airRelativeHumidity * 2.1674) / (airResultAsKelvin) / airDensity 
       $('#indoorAirHumidity').text(indoorAirHumidity);

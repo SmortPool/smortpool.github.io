@@ -638,57 +638,64 @@
                     <div class="panel">
                         <br>
                         <form class="form-pool">
-                            <div class="form-block">
-                                <div class="form-row">
-                                    <div class="col">
-                                        <div class="input-group mb-3">
-                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                <option selected disabled>Pool Type</option>
-                                                <option value="1">Hot tub</option>
-                                                <option value="2">Sport's pool</option>
-                                                <option value="3">Japanese pool</option>
-                                                <option value="3">Circulated pool</option>
-                                                <option value="3">Fountain pool</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="input-group mb-3">
-                                            <input type="number" class="form-control" id="poolArea" placeholder="Surface Area">
-                                            <div class="input-group-append">
-                                                <span class="input-group-text">m²</span>
+                            <div id="poolsections">
+                                <div class="form-block poolsection">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="input-group mb-3">
+                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                    <option selected disabled>Pool Type</option>
+                                                    <option value="1">Hot tub</option>
+                                                    <option value="2">Sport's pool</option>
+                                                    <option value="3">Japanese pool</option>
+                                                    <option value="3">Circulated pool</option>
+                                                    <option value="3">Fountain pool</option>
+                                                </select>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="input-group mb-3">
-                                            <input type="number" class="form-control"  id="poolTemperature" placeholder="Pool temperature">
-                                            <div class="input-group-append">
-                                                <span class="input-group-text">°C</span>
+                                        <div class="col">
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control" id="poolArea" placeholder="Surface Area">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">m²</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="input-group mb-3">
-                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                <option selected disabled>Vent service area</option>
-                                                <option value="1">S1</option>
-                                                <option value="2">S2</option>
-                                                <option value="3">S3</option>
-                                                <option value="3">S4</option>
-                                                <option value="3">S5</option>
-                                            </select>
+                                        <div class="col">
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control"  id="poolTemperature" placeholder="Pool temperature">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">°C</span>
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div class="col">
+                                            <div class="input-group mb-3">
+                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                    <option selected disabled>Vent service area</option>
+                                                    <option value="1">S1</option>
+                                                    <option value="2">S2</option>
+                                                    <option value="3">S3</option>
+                                                    <option value="3">S4</option>
+                                                    <option value="3">S5</option>
+                                                </select>
+                                            </div>
+                                        
+                                        </div>
+                                        <button class="poolremove btn btn-secondary btn-lg">Remove pool</button>
                                     </div>
-                                </div>    
-                            </div> 
+                                </div>
+                            </div>
+                            <button class="addsection btn btn-secondary btn-lg">Add pool</button>
+                            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
                         </form>
                     </div>
                     <button class="accordion">Ventilation heating</button>
                     <div class="panel">
                         <br>
                         <form class="form-pool">
-                            <div class="form-block">
+                            <div id="ventsections">
+                            <div class="form-block ventsection">
                                 <div class="form-row">
                                     <div class="col">
                                         <div class="input-group mb-3">
@@ -718,8 +725,12 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <button class="ventremove btn btn-secondary btn-lg">Remove service area</button>
                                 </div>    
-                            </div> 
+                            </div>
+                            </div>
+                            <button class="ventsection btn btn-secondary btn-lg">Add service area</button>
+                            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>  
                         </form>
                     </div>
 
@@ -1469,13 +1480,14 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- Add pooltable-->
+        <!-- Add element function-->
         <script src="js/addpool.js"></script>
+        <script src="js/addvent.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Add accordion-->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/accordion.js"></script>
-        <!-- Add function-->
+        <!-- Calculator function-->
         <script src="js/calculator.js"></script>
     </body>
 </html>

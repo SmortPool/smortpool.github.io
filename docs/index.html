@@ -167,7 +167,7 @@
                     Calculate how much you can save
                     </h3>
 
-                    <button class="accordion">General information</button>
+                    <button class="accordion"><b>General information</b></button>
                     
                     <div class="panel">
                         <br>
@@ -261,6 +261,28 @@
                         <div class="form-row">
                             <div class="col">
                                 <div class="text-center">
+                                    <p><b>Type of energy</b></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="text-center">                                    
+                                    <p><b>Electricity</b></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="text" class="form-control" id="priceofElectricity" placeholder="Secondary type">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="text" class="form-control" id="priceofElectricity" placeholder="3rd type of energy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="text-center">
                                     <p><b>Price of electricity</b></p>
                                 </div>
                             </div>
@@ -272,46 +294,71 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- General monthly energy consumption block-->
-                        <div class="form-row">
                             <div class="col">
-                                <button type="button" data-toggle="collapse" data-target="#singleMonth" class="btn btn-secondary btn-lg btn-block" aria-expanded="false" aria-controls="collapseExample">Single month</button>
-                            </div>
-                            <div class="col">
-                                <button type="button" data-toggle="collapse" data-target="#fullYear" class="btn btn-secondary btn-lg btn-block" aria-expanded="false" aria-controls="collapseExample">Full year</button>
-                            </div>
-                        </div>
-                        <br>
-                        </p>
-                        <div id="singleMonth">
-                            <div>
-                                <div class="form-row">
-                            <div class="col">
-                                <div class="text-center">
-                                    <p><b>Electricity consumption</b></p>
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" id="priceofElectricity" placeholder="Secondary price of energy">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">€/MWh</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="input-group mb-3">                                    
-                                    <input type="number"  id="singleMonthConsumption" class="form-control" placeholder="Electricity consumption">
+                                    <input type="number" class="form-control" id="priceofElectricity" placeholder="3rd price of energy">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">€/MWh</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <p><b>Consumption of energy</b></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" id="priceofElectricity" placeholder="Electricity consumption">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">MWh</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" id="priceofElectricity" placeholder="Secondary consumption of energy">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">MWh</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" id="priceofElectricity" placeholder="3rd consumption of energy">
                                     <div class="input-group-append">
                                         <span class="input-group-text">MWh</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- General monthly energy consumption block-->
+                        <div class="form-row">
+                            <div class="col">
+                                <button type="button" data-toggle="collapse" data-target="#fullYear" class="btn btn-outline-secondary btn-lg btn-block">Multiple default months</button>
                             </div>
                         </div>
-                        <div id="fullYear">
+                        <br>
+                        
+                        <div id="fullYear" class="collapse">
                             <div>
                                 <table class="table table-borderless">
                                     <thead>
                                         <tr>
                                         <th scope="col">Month</th>
-                                        <th scope="col">Price of electricity</th>
-                                        <th scope="col">Price of ___</th>
-                                        <th scope="col">Price of ___</th>
+                                        <th scope="col">Electricity consumption</th>
+                                        <th scope="col"><input type="text" class="form-control" id="janElectricityConsumption" placeholder="Secondary source"></th>
+                                        <th scope="col"><input type="text" class="form-control" id="janElectricityConsumption" placeholder="3rd source"></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -319,7 +366,7 @@
                                         <th scope="row">January</th>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <input type="number" class="form-control" id="janElectricityConsumption" placeholder="Electricity consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -327,7 +374,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="janSecondaryConsumption" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -335,7 +382,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="jan3Source" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -345,7 +392,7 @@
                                         <th scope="row">February</th>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <input type="number" class="form-control" id="febElectricityConsumption" placeholder="Electricity consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -353,7 +400,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="febSecondaryConsumption" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -361,7 +408,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="feb3Source" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -371,7 +418,7 @@
                                         <th scope="row">March</th>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <input type="number" class="form-control" id="marElectricityConsumption" placeholder="Electricity consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -379,7 +426,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control"  id="marSecondaryConsumption" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -387,7 +434,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="mar3Source" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -397,7 +444,7 @@
                                         <th scope="row">April</th>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <input type="number" class="form-control" id="aprElectricityConsumption" placeholder="Electricity consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -405,7 +452,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="aprSecondaryConsumption" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -413,7 +460,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="apr3Source" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -423,7 +470,7 @@
                                         <th scope="row">May</th>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <input type="number" class="form-control" id="mayElectricityConsumption" placeholder="Electricity consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -431,7 +478,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="maySecondaryConsumption" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -439,7 +486,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="may3Source" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -449,7 +496,7 @@
                                         <th scope="row">June</th>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <input type="number" class="form-control" id="junElectricityConsumption" placeholder="Electricity consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -457,7 +504,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="junSecondaryConsumption" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -465,7 +512,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="jun3Source" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -475,7 +522,7 @@
                                         <th scope="row">July</th>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <input type="number" class="form-control" id="julElectricityConsumption" placeholder="Electricity consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -483,7 +530,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="julSecondaryConsumption" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -491,7 +538,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="jul3Source" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -501,7 +548,7 @@
                                         <th scope="row">August</th>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <input type="number" class="form-control" id="augElectricityConsumption" placeholder="Electricity consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -509,7 +556,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="augSecondaryConsumption" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -517,7 +564,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="aug3Source" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -527,7 +574,7 @@
                                         <th scope="row">September</th>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <input type="number" class="form-control" id="sepElectricityConsumption" placeholder="Electricity consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -535,7 +582,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="sepSecondaryConsumption" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -543,7 +590,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="sep3Source" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -553,7 +600,7 @@
                                         <th scope="row">October</th>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <input type="number" class="form-control" id="octElectricityConsumption" placeholder="Electricity consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -561,7 +608,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="octSecondaryConsumption" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -569,7 +616,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="oct3Source" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -579,7 +626,7 @@
                                         <th scope="row">November</th>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <input type="number" class="form-control" id="novElectricityConsumption" placeholder="Electricity consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -587,7 +634,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="novSecondaryConsumption" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -595,7 +642,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="nov3Source" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -605,7 +652,7 @@
                                         <th scope="row">December</th>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Electricity consumption">
+                                                <input type="number" class="form-control" id="decElectricityConsumption" placeholder="Electricity consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -613,7 +660,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="decSecondaryConsumption" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -621,7 +668,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group mb-3">                                    
-                                                <input type="number" class="form-control" placeholder="Energy consumption">
+                                                <input type="number" class="form-control" id="dec3Source" placeholder="Energy consumption">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">MWh</span>
                                                 </div>
@@ -634,22 +681,22 @@
                         </div>
                         </form>
                     </div>
-                    <button class="accordion">Pool heating</button>
+                    <button class="accordion"><b>Pool heating</b></button>
                     <div class="panel">
                         <br>
                         <form class="form-pool">
                             <div id="poolsections">
-                                <div class="form-block poolsection">
+                                <div class="form-block poolsection" id="pooldiv">
                                     <div class="form-row">
                                         <div class="col">
                                             <div class="input-group mb-3">
                                                 <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                                                     <option selected disabled>Pool Type</option>
-                                                    <option value="1">Hot tub</option>
-                                                    <option value="2">Sport's pool</option>
-                                                    <option value="3">Japanese pool</option>
-                                                    <option value="3">Circulated pool</option>
-                                                    <option value="3">Fountain pool</option>
+                                                    <option value="hotTub">Hot tub</option>
+                                                    <option value="sport">Sport's pool</option>
+                                                    <option value="japanese">Japanese pool</option>
+                                                    <option value="circulated">Circulated pool</option>
+                                                    <option value="fountain">Fountain pool</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -671,105 +718,91 @@
                                         </div>
                                         <div class="col">
                                             <div class="input-group mb-3">
-                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                <select class="custom-select mr-sm-2" id="ventsInlineFormCustomSelect">
                                                     <option selected disabled>Vent service area</option>
-                                                    <option value="1">S1</option>
-                                                    <option value="2">S2</option>
-                                                    <option value="3">S3</option>
-                                                    <option value="3">S4</option>
-                                                    <option value="3">S5</option>
+                                                    <option value="p1">S1</option>
+                                                    <option value="p2">S2</option>
+                                                    <option value="p3">S3</option>
+                                                    <option value="p4">S4</option>
+                                                    <option value="p5">S5</option>
                                                 </select>
                                             </div>
-                                        
                                         </div>
-                                        <button class="poolremove btn btn-secondary btn-lg">Remove pool</button>
+                                        <button class="poolremove btn btn-secondary">Remove pool</button>
                                     </div>
                                 </div>
                             </div>
-                            <button class="addsection btn btn-secondary btn-lg">Add pool</button>
+                            <button class="addPoolSection btn btn-secondary">Add pool</button>
                             <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
                         </form>
                     </div>
-                    <button class="accordion">Ventilation heating</button>
+                    <button class="accordion"><b>Ventilation heating</b></button>
                     <div class="panel">
                         <br>
                         <form class="form-pool">
                             <div id="ventsections">
-                            <div class="form-block ventsection">
-                                <div class="form-row">
-                                    <div class="col">
-                                        <div class="input-group mb-3">
-                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                <option selected disabled>Vent service area</option>
-                                                <option value="1">S1</option>
-                                                <option value="2">S2</option>
-                                                <option value="3">S3</option>
-                                                <option value="3">S4</option>
-                                                <option value="3">S5</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="input-group mb-3">
-                                            <input type="number" class="form-control"  id="airTemperature" placeholder="Air temperature">
-                                            <div class="input-group-append">
-                                                <span class="input-group-text">°C</span>
+                                <div class="form-block ventsection" id="ventdiv">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="input-group mb-3">
+                                                <select class="custom-select mr-sm-2" id="ventInlineFormCustomSelect">
+                                                    <option selected disabled>Vent service area</option>
+                                                    <option value="v1">S1</option>
+                                                    <option value="v2">S2</option>
+                                                    <option value="v3">S3</option>
+                                                    <option value="v4">S4</option>
+                                                    <option value="v5">S5</option>
+                                                </select>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="input-group mb-3">
-                                            <input type="number" class="form-control" id="airRelativeHumidity" placeholder="Relative humidity">
-                                            <div class="input-group-append">
-                                                <span class="input-group-text">%</span>
+                                        <div class="col">
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control"  id="airTemperature" placeholder="Air temperature">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">°C</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <button class="ventremove btn btn-secondary btn-lg">Remove service area</button>
-                                </div>    
+                                        <div class="col">
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control" id="airRelativeHumidity" placeholder="Relative humidity">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="ventremove btn btn-secondary">Remove service area</button>
+                                    </div>    
+                                </div>
                             </div>
-                            </div>
-                            <button class="ventsection btn btn-secondary btn-lg">Add service area</button>
+                            <button class="addVentSection btn btn-secondary">Add service area</button>
                             <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>  
                         </form>
                     </div>
 
-                    <button class="accordion">Domestic hot water</button>
+                    <button class="accordion"><b>Domestic hot water</b></button>
                     <div class="panel">
                         <p>Lorem ipsum...</p>
                     </div>
 
-                    <button class="accordion">(Other)</button>
+                    <button class="accordion"><b>(Other)</b></button>
                     <div class="panel">
                         <p>Lorem ipsum...</p>
                     </div>
-                    <button class="accordion">Results</button>
-                    <div class="panel">
+                    <button class="accordion"><b>Results</b></button>
+                    <div class="panel" style="overflow: hidden;">
                         <br>
-                        <h3>Electricity total price</h3>
-                        <p id="priceResult">Heres result</p>
-                        <h3>Air temperature as kelvin</h3>
-                        <p id="airResultAsKelvin">Heres result</p>
-                        <h3>Pool temperature as Kelvin</h3>
-                        <p id="poolResultAsKelvin">Heres result</p>
-                        <h3>Ruumiõhu niiskussisaldus [g/kg] - indoor Air Humidity</h3>
-                        <p id="indoorAirHumidity">Heres result</p>
-                        <h3>Veeauru osarõhk veeauruga küllastunud niiskes õhus [Pa] - water Vapor Partial Pressure In Saturated Humid Air</h3>
-                        <p id="waterVaporPartialPressureInSaturatedHumidAir">Heres result</p>
-                        <h3>Veeauru osarõhk antud temperatuuril [Pa] - water Vapor Partial Pressure At Given Temperature</h3>
-                        <p id="waterVaporPartialPressureAtGivenTemperature">Heres result</p>
-                        <h3>Veeauru osarõhk basseinpinna kohal [Pa] - water Vapor Partial Pressure Above Pool</h3>
-                        <p id="waterVaporPartialPressureAbovePool">Heres result</p>
-                        <h3>Aurustuva vee kogus VDI järgi kasutusajal [kg/h] - amount Of Evaporating Water VDI</h3>
-                        <p id="amountOfEvaporatingWaterVDI">Heres result</p>
-                        <h3>Õhuvooluhulk [m3/h] - air Flow Rate</h3>
-                        <p id="airFlowRate">Heres result</p>
-                        <h3>Õhutihedus [kg/l] - air Density</h3>
-                        <p id="airDensity">Heres result</p>
+                        <div>
+                            <br>
+                            <canvas id="myChart"></canvas>
+                            <br>
+                            <br>
+                        </div>
                     </div>
                 </div> 
             </div>
         </section>
+        <br><br><br><br><br>
         <!-- About-->
         <section class="page-section" id="about">
             <div class="container">
@@ -1489,5 +1522,8 @@
         <script src="js/accordion.js"></script>
         <!-- Calculator function-->
         <script src="js/calculator.js"></script>
+        <!-- chart.js-->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/chart.js"></script>
     </body>
 </html>

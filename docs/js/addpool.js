@@ -1,26 +1,26 @@
 //define template
-var template = $('#poolsections .poolsection:first').clone();
+var poolTemplate = $('#poolsections .poolsection:first').clone();
 
 //define counter
-var sectionsCount = 1;
+var poolSectionsCount = 1;
 
 //add new section
-$('body').on('click', '.addsection', function() {
+$(".form-pool").on('click', '.addPoolSection', function() {
 
     //increment
-    sectionsCount++;
+    poolSectionsCount++;
     
     //loop through each input
-    var poolsection = template.clone().find(':input').each(function(){
+    var poolsection = poolTemplate.clone().find(':input').each(function(){
 
         //set id to store the updated section number
-        var newId = this.id + sectionsCount;
+        var newPoolId = this.poolId + poolSectionsCount;
 
         //update for label
-        $(this).prev().attr('for', newId);
+        $(this).prev().attr('for', newPoolId);
 
         //update id
-        this.id = newId;
+        this.poolId = newPoolId;
 
     }).end()
    

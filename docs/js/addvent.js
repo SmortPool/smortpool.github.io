@@ -5,7 +5,7 @@ var ventTemplate = $('#ventsections .ventsection:first').clone();
 var ventSectionsCount = 1;
 
 //add new section
-$('body').on('click', '.ventsection', function() {
+$('.form-pool').on('click', '.addVentSection', function() {
 
     //increment
     ventSectionsCount++;
@@ -14,13 +14,13 @@ $('body').on('click', '.ventsection', function() {
     var ventsection = ventTemplate.clone().find(':input').each(function(){
 
         //set id to store the updated section number
-        var newVentId = this.id + ventSectionsCount;
+        var newVentId = this.ventId + ventSectionsCount;
 
         //update for label
         $(this).prev().attr('for', newVentId);
 
         //update id
-        this.id = newVentId;
+        this.ventId = newVentId;
 
     }).end()
    

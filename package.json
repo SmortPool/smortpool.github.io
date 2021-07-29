@@ -10,6 +10,7 @@
         "build:html": "node scripts/build-html.js",
         "build:cname": "node scripts/build-cname.js",
         "clean": "node scripts/clean.js",
+        "scss": "uglifyjs docs/js/calculator.js",
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },
@@ -38,7 +39,8 @@
     },
     "dependencies": {
         "bootstrap": "4.5.3",
-        "chart.js": "^3.4.1"
+        "chart.js": "^3.4.1",
+        "uglify-js": "^3.13.10"
     },
     "devDependencies": {
         "autoprefixer": "10.0.1",

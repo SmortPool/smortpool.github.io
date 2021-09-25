@@ -39,7 +39,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                    Smartpool
+                    HeatSync
                     <!-- <img src="assets/img/navbar-logo.svg" alt=""
                 /> -->
                 </a>
@@ -67,8 +67,8 @@
                         <li class="nav-item">
                             <a
                                 class="nav-link js-scroll-trigger"
-                                href="#portfolio"
-                                >Portfolio</a
+                                href="#calculator"
+                                >Calculator</a
                             >
                         </li>
                         <li class="nav-item">
@@ -95,7 +95,7 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome To Smart Pool!</div>
+                <div class="masthead-subheading">Welcome To HeatSync!</div>
                 <div class="masthead-heading text-uppercase">
                     Make it efficient
                 </div>
@@ -158,199 +158,651 @@
                 </div>
             </div>
         </section>
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
+        <!-- Calculator-->
+        <section class="page-section" id="calculator">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
+                    <h2 class="section-heading text-uppercase">Calculator</h2>
                     <h3 class="section-subheading text-muted">
-                        Lorem ipsum dolor sit amet consectetur.
+                    Calculate how much you can save
                     </h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a
-                                class="portfolio-link"
-                                data-toggle="modal"
-                                href="#portfolioModal1"
-                            >
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
+
+                    <button class="accordion"><b>General information</b></button>
+                    
+                    <div class="panel">
+                        <br>
+                        <form>
+                        <!-- General location block-->
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="visitors"><b>Altitude of object</b></label>
+                                <div class="input-group mb-3">
+                                    <input type="number" class="form-control" id="objectsAltitude" placeholder="Altitude">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">m</span>
                                     </div>
                                 </div>
-                                <img
-                                    class="img-fluid"
-                                    src="assets/img/portfolio/01-thumbnail.jpg"
-                                    alt=""
-                                />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">
-                                    Threads
-                                </div>
-                                <div
-                                    class="portfolio-caption-subheading text-muted"
-                                >
-                                    Illustration
+                            </div>
+                            <div class="col">
+                                <label for="nomarea"><b>Nominal area of object</b></label>
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" placeholder="Nominal area">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">m²</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a
-                                class="portfolio-link"
-                                data-toggle="modal"
-                                href="#portfolioModal2"
-                            >
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
+                        <!-- General outside parameters block-->
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <p></p>
                                 </div>
-                                <img
-                                    class="img-fluid"
-                                    src="assets/img/portfolio/02-thumbnail.jpg"
-                                    alt=""
-                                />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">
-                                    Explore
+                            </div>
+                            <div class="col">
+                                <div class="text-center">
+                                    <p><b>Summer</b></p>
                                 </div>
-                                <div
-                                    class="portfolio-caption-subheading text-muted"
-                                >
-                                    Graphic Design
+                            </div>
+                            <div class="col">
+                                <div class="text-center">
+                                    <p><b>Winter</b></p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a
-                                class="portfolio-link"
-                                data-toggle="modal"
-                                href="#portfolioModal3"
-                            >
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <p><b>Temperature</b></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" placeholder="Summer temperature">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">°C</span>
                                     </div>
                                 </div>
-                                <img
-                                    class="img-fluid"
-                                    src="assets/img/portfolio/03-thumbnail.jpg"
-                                    alt=""
-                                />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">
-                                    Finish
-                                </div>
-                                <div
-                                    class="portfolio-caption-subheading text-muted"
-                                >
-                                    Identity
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" placeholder="Winter Temperature">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">°C</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <div class="portfolio-item">
-                            <a
-                                class="portfolio-link"
-                                data-toggle="modal"
-                                href="#portfolioModal4"
-                            >
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <p><b>Humidity</b></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" placeholder="Summer humidity">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">%</span>
                                     </div>
                                 </div>
-                                <img
-                                    class="img-fluid"
-                                    src="assets/img/portfolio/04-thumbnail.jpg"
-                                    alt=""
-                                />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">
-                                    Lines
-                                </div>
-                                <div
-                                    class="portfolio-caption-subheading text-muted"
-                                >
-                                    Branding
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" placeholder="Winter humidity">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">%</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a
-                                class="portfolio-link"
-                                data-toggle="modal"
-                                href="#portfolioModal5"
-                            >
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
+                        <!-- General energy price block-->
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <p><b>Type of energy</b></p>
                                 </div>
-                                <img
-                                    class="img-fluid"
-                                    src="assets/img/portfolio/05-thumbnail.jpg"
-                                    alt=""
-                                />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">
-                                    Southwest
+                            </div>
+                            <div class="col">
+                                <div class="text-center">                                    
+                                    <p><b>Electricity</b></p>
                                 </div>
-                                <div
-                                    class="portfolio-caption-subheading text-muted"
-                                >
-                                    Website Design
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="text" class="form-control" id="priceofElectricity" placeholder="Secondary type">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="text" class="form-control" id="priceofElectricity" placeholder="3rd type of energy">
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="portfolio-item">
-                            <a
-                                class="portfolio-link"
-                                data-toggle="modal"
-                                href="#portfolioModal6"
-                            >
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <p><b>Price of electricity</b></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" id="priceofElectricity" placeholder="Price of energy">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">€/MWh</span>
                                     </div>
                                 </div>
-                                <img
-                                    class="img-fluid"
-                                    src="assets/img/portfolio/06-thumbnail.jpg"
-                                    alt=""
-                                />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">
-                                    Window
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" id="priceofElectricity" placeholder="Secondary price of energy">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">€/MWh</span>
+                                    </div>
                                 </div>
-                                <div
-                                    class="portfolio-caption-subheading text-muted"
-                                >
-                                    Photography
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" id="priceofElectricity" placeholder="3rd price of energy">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">€/MWh</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="text-center">
+                                    <p><b>Consumption of energy</b></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" id="priceofElectricity" placeholder="Electricity consumption">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">MWh</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" id="priceofElectricity" placeholder="Secondary consumption of energy">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">MWh</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">                                    
+                                    <input type="number" class="form-control" id="priceofElectricity" placeholder="3rd consumption of energy">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">MWh</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- General monthly energy consumption block-->
+                        <div class="form-row">
+                            <div class="col">
+                                <button type="button" data-toggle="collapse" data-target="#fullYear" class="btn btn-outline-secondary btn-lg btn-block">Multiple default months</button>
+                            </div>
+                        </div>
+                        <br>
+                        
+                        <div id="fullYear" class="collapse">
+                            <div>
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">Month</th>
+                                        <th scope="col">Electricity consumption</th>
+                                        <th scope="col"><input type="text" class="form-control" id="secondarySource" placeholder="Secondary source"></th>
+                                        <th scope="col"><input type="text" class="form-control" id="thirdSource" placeholder="3rd source"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <th scope="row">January</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="janElectricityConsumption" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="janSecondaryConsumption" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="jan3Source" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">February</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="febElectricityConsumption" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="febSecondaryConsumption" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="feb3Source" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">March</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="marElectricityConsumption" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control"  id="marSecondaryConsumption" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="mar3Source" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">April</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="aprElectricityConsumption" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="aprSecondaryConsumption" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="apr3Source" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">May</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="mayElectricityConsumption" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="maySecondaryConsumption" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="may3Source" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">June</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="junElectricityConsumption" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="junSecondaryConsumption" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="jun3Source" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">July</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="julElectricityConsumption" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="julSecondaryConsumption" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="jul3Source" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">August</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="augElectricityConsumption" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="augSecondaryConsumption" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="aug3Source" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">September</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="sepElectricityConsumption" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="sepSecondaryConsumption" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="sep3Source" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">October</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="octElectricityConsumption" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="octSecondaryConsumption" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="oct3Source" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">November</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="novElectricityConsumption" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="novSecondaryConsumption" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="nov3Source" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                        <th scope="row">December</th>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="decElectricityConsumption" placeholder="Electricity consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="decSecondaryConsumption" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input-group mb-3">                                    
+                                                <input type="number" class="form-control" id="dec3Source" placeholder="Energy consumption">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">MWh</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        </form>
                     </div>
-                </div>
+                    <button class="accordion"><b>Pool heating</b></button>
+                    <div class="panel">
+                        <br>
+                        <form class="form-pool">
+                            <div id="poolsections">
+                                <div class="form-block poolsection" id="pooldiv">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="input-group mb-3">
+                                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                    <option selected disabled>Pool Type</option>
+                                                    <option value="hotTub">Hot tub</option>
+                                                    <option value="sport">Sport's pool</option>
+                                                    <option value="japanese">Japanese pool</option>
+                                                    <option value="circulated">Circulated pool</option>
+                                                    <option value="fountain">Fountain pool</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control" id="poolArea" placeholder="Surface Area">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">m²</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control"  id="poolTemperature" placeholder="Pool temperature">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">°C</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="input-group mb-3">
+                                                <select class="custom-select mr-sm-2" id="ventsInlineFormCustomSelect">
+                                                    <option selected disabled>Vent service area</option>
+                                                    <option value="p1">S1</option>
+                                                    <option value="p2">S2</option>
+                                                    <option value="p3">S3</option>
+                                                    <option value="p4">S4</option>
+                                                    <option value="p5">S5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <button class="poolremove btn btn-secondary">Remove pool</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="addPoolSection btn btn-secondary">Add pool</button>
+                            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+                        </form>
+                    </div>
+                    <button class="accordion"><b>Ventilation heating</b></button>
+                    <div class="panel">
+                        <br>
+                        <form class="form-pool">
+                            <div id="ventsections">
+                                <div class="form-block ventsection" id="ventdiv">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="input-group mb-3">
+                                                <select class="custom-select mr-sm-2" id="ventInlineFormCustomSelect">
+                                                    <option selected disabled>Vent service area</option>
+                                                    <option value="v1">S1</option>
+                                                    <option value="v2">S2</option>
+                                                    <option value="v3">S3</option>
+                                                    <option value="v4">S4</option>
+                                                    <option value="v5">S5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control"  id="airTemperature" placeholder="Air temperature">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">°C</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="input-group mb-3">
+                                                <input type="number" class="form-control" id="airRelativeHumidity" placeholder="Relative humidity">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="ventremove btn btn-secondary">Remove service area</button>
+                                    </div>    
+                                </div>
+                            </div>
+                            <button class="addVentSection btn btn-secondary">Add service area</button>
+                            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>  
+                        </form>
+                    </div>
+
+                    <button class="accordion"><b>Domestic hot water</b></button>
+                    <div class="panel">
+                        <p>Lorem ipsum...</p>
+                    </div>
+
+                    <button class="accordion"><b>(Other)</b></button>
+                    <div class="panel">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                    <button class="accordion"><b>Results</b></button>
+                    <div class="panel" style="overflow: hidden;">
+                        <br>
+                        <div>
+                            <br>
+                            <canvas id="myChart"></canvas>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div> 
             </div>
         </section>
+        <br><br><br><br><br>
         <!-- About-->
         <section class="page-section" id="about">
             <div class="container">
@@ -524,28 +976,10 @@
                                 src="assets/img/team/1.jpg"
                                 alt=""
                             />
-                            <h4>Kay Garland</h4>
-                            <p class="text-muted">Lead Designer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"
-                                ><i class="fab fa-twitter"></i
-                            ></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"
-                                ><i class="fab fa-facebook-f"></i
-                            ></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"
-                                ><i class="fab fa-linkedin-in"></i
-                            ></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img
-                                class="mx-auto rounded-circle"
-                                src="assets/img/team/2.jpg"
-                                alt=""
-                            />
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Marketer</p>
+                            <h4>Kaspar</h4><br>
+                            <p class="text-muted">CEO</p>
+                            <p class="text-muted">555 666 777</p>
+                            <p class="text-muted">kassu@heatsync.eu</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!"
                                 ><i class="fab fa-twitter"></i
                             ></a>
@@ -564,8 +998,32 @@
                                 src="assets/img/team/3.jpg"
                                 alt=""
                             />
-                            <h4>Diana Petersen</h4>
+                            <h4>Aliide</h4><br>
+                            <p class="text-muted">Lead Marketer</p>
+                            <p class="text-muted">555 666 777</p>
+                            <p class="text-muted">Aliide@heatsync.eu</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"
+                                ><i class="fab fa-twitter"></i
+                            ></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"
+                                ><i class="fab fa-facebook-f"></i
+                            ></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"
+                                ><i class="fab fa-linkedin-in"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img
+                                class="mx-auto rounded-circle"
+                                src="assets/img/team/2.jpg"
+                                alt=""
+                            />
+                            <h4>Mohamad</h4><br>
                             <p class="text-muted">Lead Developer</p>
+                            <p class="text-muted">555 666 777</p>
+                            <p class="text-muted">Mohamad@heatsync.eu</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!"
                                 ><i class="fab fa-twitter"></i
                             ></a>
@@ -581,54 +1039,13 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center">
                         <p class="large text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Aut eaque, laboriosam veritatis, quos non quis
-                            ad perspiciatis, totam corporis ea, alias ut unde.
+                            Contact us info@heatsync.eu
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Clients-->
-        <div class="py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"
-                            ><img
-                                class="img-fluid d-block mx-auto"
-                                src="assets/img/logos/envato.jpg"
-                                alt=""
-                        /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"
-                            ><img
-                                class="img-fluid d-block mx-auto"
-                                src="assets/img/logos/designmodo.jpg"
-                                alt=""
-                        /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"
-                            ><img
-                                class="img-fluid d-block mx-auto"
-                                src="assets/img/logos/themeforest.jpg"
-                                alt=""
-                        /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"
-                            ><img
-                                class="img-fluid d-block mx-auto"
-                                src="assets/img/logos/creative-market.jpg"
-                                alt=""
-                        /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Contact-->
+        <!-- Contact
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
@@ -640,7 +1057,8 @@
                 <form
                     id="contactForm"
                     name="sentMessage"
-                    novalidate="novalidate"
+                    action="https://formspree.io/f/xoqynjrq"
+                    method="POST"
                 >
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
@@ -649,6 +1067,7 @@
                                     class="form-control"
                                     id="name"
                                     type="text"
+                                    name="name"
                                     placeholder="Your Name *"
                                     required="required"
                                     data-validation-required-message="Please enter your name."
@@ -660,6 +1079,7 @@
                                     class="form-control"
                                     id="email"
                                     type="email"
+                                    name="email"
                                     placeholder="Your Email *"
                                     required="required"
                                     data-validation-required-message="Please enter your email address."
@@ -671,6 +1091,7 @@
                                     class="form-control"
                                     id="phone"
                                     type="tel"
+                                    name="phone"
                                     placeholder="Your Phone *"
                                     required="required"
                                     data-validation-required-message="Please enter your phone number."
@@ -683,6 +1104,7 @@
                                 <textarea
                                     class="form-control"
                                     id="message"
+                                    name="message"
                                     placeholder="Your Message *"
                                     required="required"
                                     data-validation-required-message="Please enter a message."
@@ -695,15 +1117,17 @@
                         <div id="success"></div>
                         <button
                             class="btn btn-primary btn-xl text-uppercase"
-                            id="sendMessageButton"
+                            id="my-form-button"
                             type="submit"
+                            name="submit"
                         >
                             Send Message
                         </button>
+                        <p id="my-form-status"></p>
                     </div>
                 </form>
             </div>
-        </section>
+        </section> -->
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
@@ -1096,9 +1520,21 @@
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Contact form JS-->
-        <script src="assets/mail/jqBootstrapValidation.js"></script>
-        <script src="assets/mail/contact_me.js"></script>
+        <script src="js/jqBootstrapValidation.js"></script>
+        <script src="js/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- Add element function-->
+        <script src="js/addpool.js"></script>
+        <script src="js/addvent.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Add accordion-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/accordion.js"></script>
+        <!-- Calculator function-->
+        <script src="js/calculator.js"></script>
+        <!-- chart.js-->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/chart.js"></script>
     </body>
 </html>

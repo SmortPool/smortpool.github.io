@@ -10,4 +10,13 @@ module.exports = function renderHTML() {
     );
 
     sh.cp("-R", srcPath, docsPath);
+
+
+    const srcCPath = path.resolve(path.dirname(__filename), "../src/calculator.html");
+    const docsCPath = path.resolve(
+        path.dirname(__filename),
+        "../docs/calculator.html"
+    );
+
+    sh.cp("-R", srcCPath, docsCPath);
 };

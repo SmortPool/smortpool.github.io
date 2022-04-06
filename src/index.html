@@ -1,446 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>HeatSync - Making it Efficient</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script
-            src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
-            crossorigin="anonymous"
-        ></script>
-        <!-- Google fonts-->
-        <link
-            href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-            rel="stylesheet"
-            type="text/css"
-        />
-        <link
-            href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
-            rel="stylesheet"
-            type="text/css"
-        />
-        <link
-            href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
-            rel="stylesheet"
-            type="text/css"
-        />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                    HeatSync
-                    <!-- <img src="assets/img/navbar-logo.svg" alt=""
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>HeatSync - Making it Efficient</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                HeatSync
+                <!-- <img src="assets/img/navbar-logo.svg" alt=""
                 /> -->
-                </a>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link js-scroll-trigger"
-                                href="#services"
-                                >Service</a
-                            >
-                        </li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#about"
-                                >Process</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#team"
-                                >Team</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link js-scroll-trigger"
-                                href="#contact"
-                                >Contact</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading">Welcome To HeatSync!</div>
-                <div class="masthead-heading text-uppercase">
-                    Making it efficient
-                </div>
-                <a
-                    class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
-                    href="#services"
-                    >Tell Me More</a
-                >
-            </div>
-        </header>
-        <!-- Services-->
-        <section class="page-section" id="services">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">What we Offer</h2>
-                    <h3 class="section-subheading text-muted">
-                        Energy cosumption and finance optimization for SPA centres. We do it through mesasurements, simulations and calculations. Proposing calculation-based energy-saving methods that provide optimal inner climate. Putting methods to use using crowdfinancing and help of investors.
-                    </h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i
-                                class="fas fa-circle fa-stack-2x text-primary"
-                            ></i>
-                            <i
-                                class="fas fa-search fa-stack-1x fa-inverse"
-                            ></i>
-                        </span>
-                        <h4 class="my-3">Energy Savings analysis</h4>
-                        <p class="text-muted">
-                            We offer a deep analysis on a spa centre to monitor current building and energy use data. Finding methods to save energy without compromising on the inner climate.
-                        </p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i
-                                class="fas fa-circle fa-stack-2x text-primary"
-                            ></i>
-                            <i class="fas fa-chart-line fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Investment-based crowdfunding</h4>
-                        <p class="text-muted">
-                            Invest money to help making a spa centre energy efficient. Investors receive money back from their investment %. Expected payback period up to 2 years.
-                        </p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i
-                                class="fas fa-circle fa-stack-2x text-primary"
-                            ></i>
-                            <i class="fas fa-cogs fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Applying saving methods</h4>
-                        <p class="text-muted">
-                            Cut down the costs of the SPA centre using simulation-confirmed methods. Optimizing, replacing energy-draining devices. Making the SPA work better as a system.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About-->
-        <section class="page-section" id="about">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Process</h2>
-                    <h3 class="section-subheading text-muted">
-                        How do we do it? 
-                        Example for one SPA centre.
-                    </h3>
-                </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image">
-                            <img
-                                class="rounded-circle img-fluid"
-                                src="assets/img/about/1.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4></h4>
-                                <h4 class="subheading">
-                                    Gathering technical info about the SPA centre
-                                </h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">
-                                    System information and settings, costs of
-                                    utilities, room plans, the measurements of
-                                    pool surfaces. Using loggers and sensors to
-                                    get real-time data from the SPA.
-                                </p>
-                            </div>
-                        </div>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#services">Service</a>
                     </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <img
-                                class="rounded-circle img-fluid"
-                                src="assets/img/about/2.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4></h4>
-                                <h4 class="subheading">
-                                    Finding the saving spots
-                                </h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">
-                                    If we see potential, we use data for 
-                                    simulations and predictions to 
-                                    find out best ways to make the SPA more
-                                    efficient energy-wise. Finding out 
-                                    concrete changes to be made and improvements 
-                                    to carry through if the savings plan gets 
-                                    funded. 
-                                </p>
-                            </div>
-                        </div>
                     </li>
-                    <li>
-                        <div class="timeline-image">
-                            <img
-                                class="rounded-circle img-fluid"
-                                src="assets/img/about/3.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4></h4>
-                                <h4 class="subheading">
-                                    Getting financing through crowdfunding                                </h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">
-                                    As we have a plan place,
-                                    we create a crowdfunding project for investors to join.
-                                    If the crowdfunding is successful,
-                                    we carry out the project to make the SPA centre more
-                                    energy-efficient.
-                                </p>
-                            </div>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">Process</a>
                     </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <img
-                                class="rounded-circle img-fluid"
-                                src="assets/img/about/4.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4></h4>
-                                <h4 class="subheading">
-                                    Carrying out the project
-                                </h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">
-                                    We use simulation-based information and measurements to 
-                                    implement our solution of energy-saving methods to the spa centre. 
-                                    This includes modifying pool- and ventillation devices parameters and replacing devices that are keeping the costs high.
-                                </p>
-                            </div>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#team">Team</a>
                     </li>
-                    <li>
-                        <div class="timeline-image">
-                            <img
-                                class="rounded-circle img-fluid"
-                                src="assets/img/about/5.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4></h4>
-                                <h4 class="subheading">
-                                    Payback period
-                                </h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="text-muted">
-                                    After the project has been successfully carried out, 
-                                    the utility bills for the spa centre are lower. From that
-                                    saving, adequete share is given back to the investors who helped 
-                                    to make the project come true.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
-                            </h4>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
-        </section>
-        <!-- Team-->
-        <section class="page-section bg-light" id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">
-                        Our Amazing Team
-                    </h2>
-                    <h3 class="section-subheading text-muted">
-                        A team of specialicts developing our solution.
-                    </h3>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-subheading">Welcome To HeatSync!</div>
+            <div class="masthead-heading text-uppercase">
+                Making it efficient
+            </div>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+        </div>
+    </header>
+    <section class="page-section">
+        <div class="container text-center">
+            <img src="assets/img/logos/logo-negavatt.svg" />
+            <h1>Demo Room Temperature</h1>
+            <p><span id="temp_val"></span><b>*C</b>
+            </p>
+        </div>
+    </section>
+    <!-- Services-->
+    <section class="page-section" id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">What we Offer</h2>
+                <h3 class="section-subheading text-muted">
+                    Energy cosumption and finance optimization for SPA centres. We do it through mesasurements,
+                    simulations and calculations. Proposing calculation-based energy-saving methods that provide optimal
+                    inner climate. Putting methods to use using crowdfinancing and help of investors.
+                </h3>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-search fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Energy Savings analysis</h4>
+                    <p class="text-muted">
+                        We offer a deep analysis on a spa centre to monitor current building and energy use data.
+                        Finding methods to save energy without compromising on the inner climate.
+                    </p>
                 </div>
-                <div class="row">
-                    <div class="col-sm-*">
-                        <div class="team-member">
-                            <img
-                                class="mx-auto rounded-circle"
-                                src="assets/img/team/kaspar.png"
-                                alt=""
-                            />
-                            <h4>Kaspar</h4><br>
-                            <p class="text-muted">CEO</p>
-                            <p class="text-muted">kaspar@heatsync.eu</p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/kaspar.trankmann" target="_blank"
-                                ><i class="fab fa-facebook-f"></i
-                            ></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/kaspar-trankmann-368210199/" target="_blank"
-                                ><i class="fab fa-linkedin-in"></i
-                            ></a>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-chart-line fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Investment-based crowdfunding</h4>
+                    <p class="text-muted">
+                        Invest money to help making a spa centre energy efficient. Investors receive money back from
+                        their investment %. Expected payback period up to 2 years.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-cogs fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Applying saving methods</h4>
+                    <p class="text-muted">
+                        Cut down the costs of the SPA centre using simulation-confirmed methods. Optimizing, replacing
+                        energy-draining devices. Making the SPA work better as a system.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About-->
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Process</h2>
+                <h3 class="section-subheading text-muted">
+                    How do we do it?
+                    Example for one SPA centre.
+                </h3>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image">
+                        <img class="rounded-circle img-fluid" src="assets/img/about/1.png" alt="" />
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4></h4>
+                            <h4 class="subheading">
+                                Gathering technical info about the SPA centre
+                            </h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">
+                                System information and settings, costs of
+                                utilities, room plans, the measurements of
+                                pool surfaces. Using loggers and sensors to
+                                get real-time data from the SPA.
+                            </p>
                         </div>
                     </div>
-                    <div class="col-sm-*">
-                        <div class="team-member">
-                            <img
-                                class="mx-auto rounded-circle"
-                                src="assets/img/team/rander.png"
-                                alt=""
-                            />
-                            <h4>Rander</h4><br>
-                            <p class="text-muted">Energy Engineer</p>
-                            <p class="text-muted">rander@heatsync.eu</p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/rander.suld" target="_blank"
-                                ><i class="fab fa-facebook-f"></i
-                            ></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/randersuld" target="_blank"
-                                ><i class="fab fa-linkedin-in"></i
-                            ></a>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <img class="rounded-circle img-fluid" src="assets/img/about/2.png" alt="" />
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4></h4>
+                            <h4 class="subheading">
+                                Finding the saving spots
+                            </h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">
+                                If we see potential, we use data for
+                                simulations and predictions to
+                                find out best ways to make the SPA more
+                                efficient energy-wise. Finding out
+                                concrete changes to be made and improvements
+                                to carry through if the savings plan gets
+                                funded.
+                            </p>
                         </div>
                     </div>
-                    <div class="col-sm-*">
-                        <div class="team-member">
-                            <img
-                                class="mx-auto rounded-circle"
-                                src="assets/img/team/aliide.png"
-                                alt=""
-                            />
-                            <h4>Aliide</h4><br>
-                            <p class="text-muted">Data analyst</p>
-                            <p class="text-muted">aliide@heatsync.eu</p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/aliideva/" target="_blank"
-                                ><i class="fab fa-facebook-f"></i
-                            ></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/aliide-vainikko/" target="_blank"
-                                ><i class="fab fa-linkedin-in"></i
-                            ></a>
+                </li>
+                <li>
+                    <div class="timeline-image">
+                        <img class="rounded-circle img-fluid" src="assets/img/about/3.png" alt="" />
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4></h4>
+                            <h4 class="subheading">
+                                Getting financing through crowdfunding </h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">
+                                As we have a plan place,
+                                we create a crowdfunding project for investors to join.
+                                If the crowdfunding is successful,
+                                we carry out the project to make the SPA centre more
+                                energy-efficient.
+                            </p>
                         </div>
                     </div>
-                    <div class="col-sm-*">
-                        <div class="team-member">
-                            <img
-                                class="mx-auto rounded-circle"
-                                src="assets/img/team/mohamad.png"
-                                alt=""
-                            />
-                            <h4>Mohamad</h4><br>
-                            <p class="text-muted">Software Engineer</p>
-                            <p class="text-muted">mohamad@heatsync.eu</p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/Mohamad.Qaddura" target="_blank"
-                                ><i class="fab fa-facebook-f"></i
-                            ></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/msqaddura" target="_blank"
-                                ><i class="fab fa-linkedin-in"></i
-                            ></a>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <img class="rounded-circle img-fluid" src="assets/img/about/4.png" alt="" />
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4></h4>
+                            <h4 class="subheading">
+                                Carrying out the project
+                            </h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">
+                                We use simulation-based information and measurements to
+                                implement our solution of energy-saving methods to the spa centre.
+                                This includes modifying pool- and ventillation devices parameters and replacing devices
+                                that are keeping the costs high.
+                            </p>
                         </div>
                     </div>
-                    <div class="col-sm-*">
-                        <div class="team-member">
-                            <img
-                                class="mx-auto rounded-circle"
-                                src="assets/img/team/alvar.png"
-                                alt=""
-                            />
-                            <h4>Alvar</h4><br>
-                            <p class="text-muted">Mechtronics Engineer</p>
-                            <p class="text-muted">alvar@heatsync.eu</p>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/alvar.parvelo" target="_blank"
-                                ><i class="fab fa-facebook-f"></i
-                            ></a>
-                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/parveloalvar" target="_blank"
-                                ><i class="fab fa-linkedin-in"></i
-                            ></a>
+                </li>
+                <li>
+                    <div class="timeline-image">
+                        <img class="rounded-circle img-fluid" src="assets/img/about/5.png" alt="" />
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4></h4>
+                            <h4 class="subheading">
+                                Payback period
+                            </h4>
                         </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">
+                                After the project has been successfully carried out,
+                                the utility bills for the spa centre are lower. From that
+                                saving, adequete share is given back to the investors who helped
+                                to make the project come true.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>
+                            Be Part
+                            <br />
+                            Of Our
+                            <br />
+                            Story!
+                        </h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Team-->
+    <section class="page-section bg-light" id="team">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">
+                    Our Amazing Team
+                </h2>
+                <h3 class="section-subheading text-muted">
+                    A team of specialicts developing our solution.
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-*">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/kaspar.png" alt="" />
+                        <h4>Kaspar</h4><br>
+                        <p class="text-muted">CEO</p>
+                        <p class="text-muted">kaspar@heatsync.eu</p>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/kaspar.trankmann"
+                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2"
+                            href="https://www.linkedin.com/in/kaspar-trankmann-368210199/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-*">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/rander.png" alt="" />
+                        <h4>Rander</h4><br>
+                        <p class="text-muted">Energy Engineer</p>
+                        <p class="text-muted">rander@heatsync.eu</p>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/rander.suld"
+                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/randersuld"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-*">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/aliide.png" alt="" />
+                        <h4>Aliide</h4><br>
+                        <p class="text-muted">Data analyst</p>
+                        <p class="text-muted">aliide@heatsync.eu</p>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/aliideva/"
+                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/aliide-vainikko/"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-*">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/mohamad.png" alt="" />
+                        <h4>Mohamad</h4><br>
+                        <p class="text-muted">Software Engineer</p>
+                        <p class="text-muted">mohamad@heatsync.eu</p>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/Mohamad.Qaddura"
+                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/msqaddura"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-*">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/alvar.png" alt="" />
+                        <h4>Alvar</h4><br>
+                        <p class="text-muted">Mechtronics Engineer</p>
+                        <p class="text-muted">alvar@heatsync.eu</p>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/alvar.parvelo"
+                            target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/parveloalvar"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Contact -->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h2 class="section-subheading text-muted">
-                        info@heatsync.eu
-                    </h2>
-                    <h2 class="section-subheading text-muted">
-                        +372 5330 7350
-                    </h2>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Contact Us</h2>
+                <h2 class="section-subheading text-muted">
+                    info@heatsync.eu
+                </h2>
+                <h2 class="section-subheading text-muted">
+                    +372 5330 7350
+                </h2>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-left">
+                    Heatsync OÜ, 2022
                 </div>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-left">
-                        Heatsync OÜ, 2022
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Contact form JS-->
-        <script src="js/jqBootstrapValidation.js"></script>
-        <script src="js/contact_me.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- Add element function-->
-        <script src="js/addpool.js"></script>
-        <script src="js/addvent.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- Add accordion-->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="js/accordion.js"></script>
-        <!-- Calculator function-->
-        <script src="js/calculator.js"></script>
-        <!-- chart.js-->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="js/chart.js"></script>
-    </body>
+        </div>
+    </footer>
+
+    <script type="module">
+
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+        import { getFirestore, collection, getDocs, doc, onSnapshot } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDW3xPt1oOwvMWMbWFOajfHGZShzg35giI",
+            authDomain: "adruino-6cf50.firebaseapp.com",
+            databaseURL: "https://adruino-6cf50-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "adruino-6cf50",
+            storageBucket: "adruino-6cf50.appspot.com",
+            messagingSenderId: "165025660762",
+            appId: "1:165025660762:web:33e2b875c7209a19cc3d63",
+            measurementId: "G-0FWGSEBE05"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const db = getFirestore(app);
+        const unsub = onSnapshot(doc(db, "test-collection", "test-document"), (doc) => {
+            console.log("Current data: ", doc.data());
+            document.getElementById("temp_val").innerText = doc.data();
+        });
+
+    </script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- Add element function-->
+    <script src="js/addpool.js"></script>
+    <script src="js/addvent.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Add accordion-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/accordion.js"></script>
+    <!-- Calculator function-->
+    <script src="js/calculator.js"></script>
+    <!-- chart.js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js"></script>
+
+</body>
+
 </html>

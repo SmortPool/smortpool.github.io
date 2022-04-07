@@ -352,8 +352,8 @@
 
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
-        import { getFirestore, collection, getDocs, doc, onSnapshot } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
+        import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
+
 
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
@@ -361,24 +361,25 @@
         // Your web app's Firebase configuration
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
         const firebaseConfig = {
-            apiKey: "AIzaSyDW3xPt1oOwvMWMbWFOajfHGZShzg35giI",
-            authDomain: "adruino-6cf50.firebaseapp.com",
-            databaseURL: "https://adruino-6cf50-default-rtdb.europe-west1.firebasedatabase.app",
-            projectId: "adruino-6cf50",
-            storageBucket: "adruino-6cf50.appspot.com",
-            messagingSenderId: "165025660762",
-            appId: "1:165025660762:web:33e2b875c7209a19cc3d63",
-            measurementId: "G-0FWGSEBE05"
+            apiKey: "AIzaSyBok_t8vfCBhVbzaIIZtcU7BypbKusaxH0",
+            authDomain: "esp32-demo-61f7a.firebaseapp.com",
+            databaseURL: "https://esp32-demo-61f7a-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "esp32-demo-61f7a",
+            storageBucket: "esp32-demo-61f7a.appspot.com",
+            messagingSenderId: "252958714817",
+            appId: "1:252958714817:web:bfccde0e17335f9f6d5d40"
         };
 
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-        const db = getFirestore(app);
-        const unsub = onSnapshot(doc(db, "test-collection", "test-document"), (doc) => {
-            console.log("Current data: ", doc.data());
-            document.getElementById("temp_val").innerText = doc.data();
+        const db = getDatabase(app);
+
+        const starCountRef = ref(db, 'test');
+        onValue(starCountRef, (snapshot) => {
+            console.lg
+            document.getElementById("temp_val").innerText = snapshot.val().temp;
         });
+
 
     </script>
     <!-- Bootstrap core JS-->
@@ -396,7 +397,7 @@
     <script src="js/addvent.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Add accordion-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/accordion.js"></script>
     <!-- Calculator function-->
     <script src="js/calculator.js"></script>

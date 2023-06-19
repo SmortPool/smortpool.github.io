@@ -54,7 +54,7 @@ function visualize (data) {
 
 }
 
-const socket = io('http://13.50.175.191:3000', {
+const socket = io(window.location.protocol+'//13.50.175.191:3000', {
     transports: ['websocket'],
   });
 
